@@ -1,0 +1,1 @@
+Sistema desenvolvido para teste técnico da empresa GA + Intergado.
