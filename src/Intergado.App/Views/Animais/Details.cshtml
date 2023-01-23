@@ -1,0 +1,38 @@
+﻿@model Intergado.App.ViewModels.AnimalViewModel
+
+@{
+    ViewData["Title"] = "Detalhes do Animal ";
+}
+
+<h4 style="padding-top: 50px">@ViewData["Title"]</h4>
+
+<div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Identificador)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fazenda.Descricao)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>
+                    @Html.DisplayFor(model => model.Identificador)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(model => model.Fazenda.Descricao)
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+ </div>
+ <br/>
+<div>
+    <a class="btn btn-dark" asp-action="Edit" asp-route-id="@Model.Id">Editar</a>
+    <a class="btn btn-info" href="javascript:window.history.back();">Voltar</a>
+</div>

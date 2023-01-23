@@ -1,0 +1,12 @@
+C:\Projetos\ProjectsBruno\Labs\Intergado\src\Intergado.Business\bin\Debug\net6.0\Intergado.Business.deps.json
+C:\Projetos\ProjectsBruno\Labs\Intergado\src\Intergado.Business\bin\Debug\net6.0\Intergado.Business.dll
+C:\Projetos\ProjectsBruno\Labs\Intergado\src\Intergado.Business\bin\Debug\net6.0\Intergado.Business.pdb
+C:\Projetos\ProjectsBruno\Labs\Intergado\src\Intergado.Business\obj\Debug\net6.0\Intergado.Business.csproj.AssemblyReference.cache
+C:\Projetos\ProjectsBruno\Labs\Intergado\src\Intergado.Business\obj\Debug\net6.0\Intergado.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\ProjectsBruno\Labs\Intergado\src\Intergado.Business\obj\Debug\net6.0\Intergado.Business.AssemblyInfoInputs.cache
+C:\Projetos\ProjectsBruno\Labs\Intergado\src\Intergado.Business\obj\Debug\net6.0\Intergado.Business.AssemblyInfo.cs
+C:\Projetos\ProjectsBruno\Labs\Intergado\src\Intergado.Business\obj\Debug\net6.0\Intergado.Business.csproj.CoreCompileInputs.cache
+C:\Projetos\ProjectsBruno\Labs\Intergado\src\Intergado.Business\obj\Debug\net6.0\Intergado.Business.dll
+C:\Projetos\ProjectsBruno\Labs\Intergado\src\Intergado.Business\obj\Debug\net6.0\refint\Intergado.Business.dll
+C:\Projetos\ProjectsBruno\Labs\Intergado\src\Intergado.Business\obj\Debug\net6.0\Intergado.Business.pdb
+C:\Projetos\ProjectsBruno\Labs\Intergado\src\Intergado.Business\obj\Debug\net6.0\ref\Intergado.Business.dll

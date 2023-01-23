@@ -1,0 +1,44 @@
+﻿@model Intergado.App.ViewModels.AnimalViewModel
+
+@{
+    ViewData["Title"] = "Editar Animal";
+}
+
+<h4 style="padding-top: 30px">@ViewData["Title"] </h4>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+        
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <label asp-for="Fazenda.Descricao" class="control-label"></label>
+                <select asp-for="FazendaId" class="form-control" asp-items="@(new SelectList(Model.Fazendas, "Id", "Descricao", Model.Fazenda.Descricao))">
+                </select>
+            </div>
+
+            <br/>
+
+            <div class="form-group">
+                <label asp-for="Identificador" class="control-label"></label>
+                <input asp-for="Identificador" class="form-control" />
+                <span asp-validation-for="Identificador" class="text-danger"></span>
+            </div>
+
+            <br />
+
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+                <a class="btn btn-info" href="javascript:window.history.back();">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

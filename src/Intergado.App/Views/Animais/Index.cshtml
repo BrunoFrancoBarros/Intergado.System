@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Intergado.App.ViewModels.AnimalViewModel>
+
+@{
+    ViewData["Title"] = "Lista de Animais";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr />
+
+<p>
+    <a class="btn btn-info" asp-action="Create"> Adicionar Animais</a>
+</p>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Identificador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fazenda.Descricao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Identificador)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fazenda.Descricao)
+                </td>
+                <td>
+                    <a class="btn btn-info" asp-controller="Animais" asp-action="Details" asp-route-id="@item.Id"><spam class="fa fa-search" /></a>
+                    <a class="btn btn-warning" asp-controller="Animais" asp-action="Edit" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></spam></a>
+                    <a class="btn btn-danger" asp-controller="Animais" asp-action="Delete" asp-route-id="@item.Id"><spam class="fa fa-trash"></spam></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

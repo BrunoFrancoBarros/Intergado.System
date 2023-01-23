@@ -1,0 +1,23 @@
+﻿@model Intergado.App.ViewModels.FazendaViewModel
+
+@{
+    ViewData["Title"] = "Detalhes da Fazenda";
+}
+
+<h4 style="padding-top: 50px">@ViewData["Title"]</h4>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-dark" asp-action="Edit" asp-route-id="@Model.Id">Editar</a>
+    <a class="btn btn-info" asp-action="Index">Voltar</a>
+</div>

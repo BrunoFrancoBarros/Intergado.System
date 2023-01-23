@@ -1,0 +1,44 @@
+﻿@model Intergado.App.ViewModels.AnimalViewModel
+
+@{
+    ViewData["Title"] = "Excluir Animal com o identificador: " + Model.Identificador;
+}
+
+<h4 style="padding-top: 50px">@ViewData["Title"] </h4>
+<div>
+    <hr />
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Identificador)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fazenda.Descricao)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => model.Identificador)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Fazenda.Descricao)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br />
+
+    <div>
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Excluir" class="btn btn-danger" />
+            <a class="btn btn-info" href="javascript:window.history.back();">Voltar</a>
+        </form>
+    </div>
+</div>
